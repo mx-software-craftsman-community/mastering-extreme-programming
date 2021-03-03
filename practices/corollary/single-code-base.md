@@ -32,7 +32,8 @@ I went through that. An important project of a company where I worked had that p
 
 <br>
 
-All of them, perfectly avoidable problems. We decided to put hands-on and tackle the root cause: The messy and uncontrolled source code repository.And that's the trap in which organizations fall into when they have a system and get new customers with similar needs that the current system covers. They "reuse" the source code for every "flavor". So, when there is a new feature or bug that traverse all the code bases, in the best scenario the development must be replicated on each code base. The mess was huge! It took us three weeks of hard work, but finally, we got a trusted single code base. How did we do it? I'll talk about it later in this post.  
+All of them, perfectly avoidable problems. We decided to put hands-on and tackle the root cause: The messy and uncontrolled source code repository. The mess was huge! It took us three weeks of hard work, but finally, we got a trusted single code base and established the guidelines for that nightmare will not happen again. What guidelines? I'll talk about it later in this post.  
+
 <br>
 
 ## "_Rather than add more code bases, fix the underlying design problem that is preventing you from running from a single code base._"
@@ -72,3 +73,16 @@ So... fix the underlying design problem that is preventing you from running from
 A clue is in the practice name: **Single** Code Base. The **Single Responsability** states that a software entity (that could be an interface, class **or component**) must have only one reason to change, that is, must have only one job. And what is a source code base? Is the place where the component's source code lives. So, following this principle, you will get a natural relationship between a  Single Responsibility component and its Single Code Base.
 
 <br>
+
+Finally, let's get back to the first point.
+
+## "_There is only one code stream. You can develop in a temporary branch, but never let it live longer than a few hours._"
+
+<br>
+
+If you have worked with some git workflow, you got it. If not, git workflows allow put in practice this last point and also avoid making messy and uncontrolled multiple code streams. By the way, we used the guidelines defined in a git workflow to prevent the mentioned problem in the explanation of the second point explanation will happen again.
+
+<br>
+
+Git workflows will be covered in subsequent posts.
+
