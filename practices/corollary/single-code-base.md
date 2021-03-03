@@ -42,7 +42,7 @@ All of them, perfectly avoidable problems. We decided to put hands-on and tackle
 
 Again, I bet most of us have seen the next scenario: An organization has a software system and gets a new customer with similar needs that the current system covers. But one problem appears, the misunderstanding about what is reusability... Maybe you got it, but let's go a little deeper.
 
-Reusability is the ability of a software component to be reused without modifying it. Reusability prevents us from reinventing the wheel. A great example is the Java Collections Framework, a built-in Java library that delivers ready-to-use data structure implementations. You can reuse the features delivered by this component without the need to modify its source code. In some extraordinary cases, you could extend it. Remember the Open-Closed design principle:
+Reusability is the ability of a software component to be reused without modifying it. Reusability prevents us from reinventing the wheel. A great example is the Java Collections Framework, a built-in Java library that delivers ready-to-use data structure implementations. You can reuse the features delivered by this component without the need to modify its source code. In some extraordinary cases, you could extend it. Remember the **Open-Closed** design principle:
 
 <br>
 
@@ -70,7 +70,7 @@ Designing a reusable software solution in one fell swoop is hard, even for exper
 
 So... fix the underlying design problem that is preventing you from running from a single code base.
 
-A clue is in the practice name: **Single** Code Base. The **Single Responsability** states that a software entity (that could be an interface, class **or component**) must have only one reason to change, that is, must have only one job. And what is a source code base? Is the place where the component's source code lives. So, following this principle, you will get a natural relationship between a  Single Responsibility component and its Single Code Base.
+A clue is in the practice name: **Single** Code Base. The **Single Responsibility** states that a software entity (that could be an interface, class **or component**) must have only one reason to change, that is, must have only one job. And what is a source code base? Is the place where the component's source code lives. So, following this principle, you will get a natural relationship between a Single Responsibility component and its Single Code Base.
 
 <br>
 
@@ -86,3 +86,12 @@ If you have worked with some git workflow, you got it. If not, git workflows all
 
 Git workflows will be covered in subsequent posts.
 
+<br>
+
+### **Final thoughts**
+
+<br>
+
+- Follow the **Single Responsability** principle to build a natural relationship between a highly specialized component and its **Single Code Base**.
+- Reuse an existing component without modifying it. If you have new needs, extended it in a NEW component, with a NEW code base. Follow the **Opened-Closed principle**.
+- Don't look to design a reusable component in one fell swoop. First, design and develop a usable and clean code solution, and after that use **Incremental Design** and **Refactoring** to pursuit the reusability goal.   
