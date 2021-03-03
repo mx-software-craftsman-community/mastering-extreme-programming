@@ -40,7 +40,7 @@ All of them, perfectly avoidable problems. We decided to put hands-on and tackle
 
 <br>
 
-Again, I bet most of us have seen the next scenario: An organization has a software system and gets a new customer with similar needs that the current system covers. But one problem appears, the misunderstanding about what is reusability... Maybe you got it, but let's got a little deep.
+Again, I bet most of us have seen the next scenario: An organization has a software system and gets a new customer with similar needs that the current system covers. But one problem appears, the misunderstanding about what is reusability... Maybe you got it, but let's go a little deeper.
 
 Reusability is the ability of a software component to be reused without modifying it. Reusability prevents us from reinventing the wheel. A great example is the Java Collections Framework, a built-in Java library that delivers ready-to-use data structure implementations. You can reuse the features delivered by this component without the need to modify its source code. In some extraordinary cases, you could extend it. Remember the Open-Closed design principle:
 
